@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<!--
+Name: Index.html
+Author: jmckenna124706
+Purpose: Assignment 5
+Date: November 26, 2022
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>    <!--Boot Strap-->
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/bootstrap-grid.css">
+    <link rel="Stylesheet" href="css/Custom.css">
+    <link href="//db.onlinewebfonts.com/c/99a6e07ae5cab387193854e1bbc9335a?family=Myriad+Pro+Cond" rel="stylesheet"
+          type="text/css"/>
+    <style>
+        .header {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.52), #FFFF0000),
+            url("images/index-photo.jpg");
+            color: white;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+            background-size: cover;
+            background-position: center;
+            text-align: center !important;
+            height: calc(100vh * 0.92);
+            padding: 0px;
+        }
+
+        header h1 {
+            font-weight: bold !important;
+            font-size: 4.2rem;
+        }
+
+        header p {
+            font-size: 1.5rem;
+            font-weight: 300;
+        }
+
+    </style>
+
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+
+    <!--Brand Name Title Goes Here!-->
+    <a class="navbar-brand" href="#">
+        <img src="images/carstar-logo.webp" width="144" height="35" alt="">
+    </a>
+
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link active" href="index.html">Home</a>
+            <li class="nav-item dropdown">
+                <div class="btn-group">
+                    <a href="services.html" class="nav-link">Services</a>
+                    <a class="nav-link nav-link dropdown-toggle dropbtn" href="#" role="button"
+                       data-toggle="dropdown" aria-expanded="false"></a>
+                    <div class="dropdown-menu ">
+                        <a href="hoovers.html" class="dropdown-item">Hoovers</a>
+                        <a href="#" class="dropdown-item">Dyson</a>
+                        <a href="#" class="dropdown-item">Fans</a>
+                        <a href="#" class="dropdown-item">Microwaves</a>
+
+                    </div>
+                </div>
+            <li class="nav-item dropdown">
+                <a class="nav-link nav-link dropdown-toggle" href="#" role="button"
+                   data-toggle="dropdown" aria-expanded="false">Car Rentals</a>
+                <div class="dropdown-menu dropdown-menu">
+                    <a href="#" class="dropdown-item">Cleaning</a>
+                    <a href="#" class="dropdown-item">Washing</a>
+                    <a href="#" class="dropdown-item">Storing</a>
+                </div>
+            <li class="nav-item">
+                <a href="#" class="nav-link">About</a>
+            </li>
+
+        </ul>
+        <!-- <form class="form-inline my-2 my-lg-0">-->
+        <!--     <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">-->
+        <!--     <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>-->
+        <!-- </form>-->
+    </div>
+</nav>
+
+<!--Header-->
+<div class="header center">
+    <div id="test">
+        <h1>WE CAN MAKE ACCIDENTS …UNHAPPEN</h1>
+        <p class="lead">Fast, free repair estimates</p>
+    </div>
+</div>
+<!-- Example split danger button -->
+<div class="btn-group">
+    <button type="button" class="btn btn-danger">Action</button>
+    <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-toggle="dropdown"
+            aria-expanded="false">
+        <span class="sr-only">Toggle Dropdown</span>
+    </button>
+    <div class="dropdown-menu">
+        <a class="dropdown-item" href="#">Action</a>
+        <a class="dropdown-item" href="#">Another action</a>
+        <a class="dropdown-item" href="#">Something else here</a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="#">Separated link</a>
+    </div>
+</div>
+<main class="container-fluid main" role="main">
+    <div class="row">
+        <div class="col-sm-12  col-md-6  col-lg-4  col-xl-3">
+            <div class="">
+                <h2>About US</h2>
+            </div>
+        </div>
+    </div>
+</main>
+<footer class="footer py-3">
+    <div class="container-fluid text-black-50">
+        <div class="row re-row">
+            <div class="col text-left">
+                &nbsp;
+                <a href="http://github.joshuamc.ca" target="_blank"><i class="fa-brands fa-github fa-2xl"></i></a>
+                &nbsp;&nbsp;&nbsp;
+                <a href="#" target="_blank"><i class="fa-brands fa-twitter fa-2xl"></i></a>
+            </div>
+            <div class="col text-center">
+                Copyright @ Joshua Mckenna 2022
+            </div>
+            <div class="col text-right">
+                <a href="#" target="_blank"><i class="fa-brands fa-discord fa-2xl"></i></i></a>
+                &nbsp;
+            </div>
+        </div>
+    </div>
+</footer>
+<!--JQuery-->
+<script src="./js/jquery-3.6.1.js"></script>
+
+<!--Boot Strap-->
+<script src="./js/bootstrap.js"></script>
+<script src="./js/bootstrap.bundle.js"></script>
+<!--Custom JavaScript-->
+<script src="./scripts/myscripts.js"></script>
+
+<script src="https://kit.fontawesome.com/ea7288deac.js" crossorigin="anonymous"></script>
+</body>
+</html>
