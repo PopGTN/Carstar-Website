@@ -1,6 +1,6 @@
 # Website Template
 
-### Features
+## Features
 
 #### DropDowns On Hover
 Supports Hover Drop-Downs with separate Buttons
