@@ -1,7 +1,6 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Maven+Pro:wght@600&display=swap');
-
 /*
-
 Name: Index.html
 Author: jmckenna124706
 Purpose: Assignment 5
@@ -34,14 +33,13 @@ main h2, main h3, main h4, main h5, main h6 {
 .jumbotron{
     margin-bottom: 0px;
 }
-.main:before{
-    margin-bottom: 32px;
-}
+
 .main {
-    padding-top: 2rem;
+/*    padding-bottom: 2rem;
+    padding-top: 2rem;*/
     background: white;
 
-    height: max(
+    min-height: max(
             max(
                     calc(100vh * 0.58),
                     calc(100vh * 0.78)
@@ -53,10 +51,15 @@ main h2, main h3, main h4, main h5, main h6 {
     );
 
 }
+.main-sections {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
 
 footer {
-    position: relative !important;
+/*    position: absolute !important;
     bottom: 0 !important;
+    width: 100%;*/
     background-color: #e9ecef !important;
 }
 
@@ -69,7 +72,7 @@ footer {
     /*margin-bottom: 2rem;*/
 }
 header h1 {
-    font-weight: bold !important;
+    font-weight: bold;
     font-size: 4.2rem;
 }
 
@@ -94,7 +97,7 @@ header p {
     justify-content: center;
     align-items: center;
     min-height: 150px;
-    background: #FFCEC2;
+    /*background: #FFCEC2;*/
 }
 nav .btn-group a:nth-child(1) {
     padding-right: 0px!important;
@@ -107,6 +110,22 @@ nav .btn-group a:nth-child(2) {
 .btn-group:hover .dropdown-menu {
     display: block !important;
     color: #0f0 !important;
+}
+
+.pattern{
+    background-image: url("../images/strips-11x11.svg")!important;
+    background-size: 20px 20px;
+}
+.headerimage {
+    width: 100%;
+    height: 100%;
+    background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.74) 0%, rgba(255, 41, 0, 0.5) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255, 41, 0, 0.5)), color-stop(100%, rgba(0, 0, 0, 0.53))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.49) 0%, rgba(255, 41, 0, 0.5) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(0, 0, 0, 0.49) 0%, rgba(255, 41, 0, 0.5) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(0, 0, 0, 0.64) 0%, rgba(255, 41, 0, 0.5) 100%); /* IE10+ */
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.79) 0%, rgba(255, 41, 0, 0.5) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#002f4b', endColorstr='#00000000', GradientType=0); /* IE6-9 */
 }
 /*
 @media screen and (min-height: 937px) {
