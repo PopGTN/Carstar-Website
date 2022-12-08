@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<!--
+Name: Index.html
+Author: jmckenna124706
+Purpose: Assignment 5
+Date: November 26, 2022
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>    <!--Boot Strap-->
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/bootstrap-grid.css">
+    <link rel="Stylesheet" href="css/Custom.css">
+    <link href="//db.onlinewebfonts.com/c/99a6e07ae5cab387193854e1bbc9335a?family=Myriad+Pro+Cond" rel="stylesheet"
+          type="text/css"/>
+    <style>
+        .header {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.52), #FFFF0000),
+            url("images/index-photo.jpg");
+            color: white;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+            height: calc(100vh * 0.92);
+            padding: 0px
+
+        }
+
+        header h1 {
+            font-weight: bold !important;
+            font-size: 4.2rem;
+        }
+
+        header p {
+            font-size: 1.5rem;
+            font-weight: 300;
+        }
+        .location {
+            border-top-style: solid;
+            border-top: #1b1e21;
+            border-top-width: 2px;
+        }
+        ul.location-list{
+            list-style-type: none;
+        }
+        ul.location-list li{
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            border-bottom-style: solid;
+            border-bottom-width: 2px;
+            border-bottom-color: #1b1e21;
+        }
+        .location-stores {
+            border-style: solid;
+            border-width: 10px;
+            border-color: #1b1e21;
+            background-color: #f5f5f5;
+            max-height: 500px;
+            overflow: scroll;
+        }
+    </style>
+
+</head>
+<body class="d-flex flex-column min-vh-100">
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+
+    <!--Brand Name Title Goes Here!-->
+    <a class="navbar-brand" href="#">
+        <img src="images/carstar-logo.webp" width="144" height="35" alt="">
+    </a>
+
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link active" href="index.html">Home</a>
+            <li class="nav-item dropdown">
+                <div class="btn-group">
+                    <a href="services.html" class="nav-link">Services</a>
+                    <a class="nav-link nav-link dropdown-toggle dropbtn" href="#" role="button"
+                       data-toggle="dropdown" aria-expanded="false"></a>
+                    <div class="dropdown-menu ">
+                        <a href="Rentals.html" class="dropdown-item">Hoovers</a>
+                        <a href="#" class="dropdown-item">Dyson</a>
+                        <a href="#" class="dropdown-item">Fans</a>
+                        <a href="#" class="dropdown-item">Microwaves</a>
+
+                    </div>
+                </div>
+            <li class="nav-item dropdown">
+                <div class="btn-group">
+                    <a href="services.html" class="nav-link">Vehicle Rentals</a>
+                    <a class="nav-link nav-link dropdown-toggle dropbtn" href="#" role="button"
+                       data-toggle="dropdown" aria-expanded="false"></a>
+                    <div class="dropdown-menu ">
+                        <a href="Rentals.html" class="dropdown-item">Sport</a>
+                        <a href="#" class="dropdown-item">Sedans</a>
+                        <a href="#" class="dropdown-item">Vans</a>
+                        <a href="#" class="dropdown-item">SUVs</a>
+                        <a href="#" class="dropdown-item">Trucks</a>
+
+                    </div>
+                </div>
+
+            <li class="nav-item">
+                <a href="#about" class="nav-link">About</a>
+            </li>
+
+        </ul>
+    </div>
+</nav>
+
+<!--Header-->
+<main class="main" role="main">
+    <section class="location container-fluid main-sections">
+        <div class="container">
+            <h3>Our Locations</h3>
+            <div class="row">
+                <div class="location-stores col-sm-12 col-md-6">
+                    <ul class="location-list">
+                        <li data-store-id="51484">
+                            <div>
+                                <p><img width="45" height="45" src="/images/star-150x150.png"
+                                        class="location-store-thumb wp-post-image"
+                                        alt="Centennial Carstar Charlottetown" decoding="async" loading="lazy"
+                                        srcset="/images/star-150x150.png 150w, https://centennialcarstar.com/wp-content/uploads/2022/07/star.png 250w"
+                                        sizes="(max-width: 45px) 100vw, 45px">
+
+                                    <strong>Centennial Carstar Charlottetown</strong>
+
+                                    <span class="location-street">361 Mt Edward Road</span>
+
+                                    <span>Charlottetown Prince Edward Island C1E 2A1</span>
+                                    <span class="location-country">Canada</span>
+                                </p>
+                                <p class="location-contact-details">
+                                        <span><strong>Phone</strong>: <a
+                                                href="tel:19023682603">1-902-368-2603</a></span>
+
+                                </p>
+                            </div>
+                            <div class="location-direction-wrap">
+                                <a class="location-directions" target="_blank"
+                                   href="https://www.google.com/maps/dir/?api=1&amp;origin=34%20Passmore%20St%2C%20Charlottetown%2C%20PE%20C1A%202B7%2C%20Canada&amp;destination=361%20Mt%20Edward%20Road%2C%20Charlottetown%2C%20C1E%202A1%2C%20Canada&amp;travelmode=driving">Directions</a>
+                            </div>
+                        </li>
+
+                        <li data-store-id="51512">
+                            <div class="location-store-location">
+                                <p><img width="45" height="45" src="/images/star-150x150.png"
+                                        class="location-store-thumb wp-post-image"
+                                        alt="Centennial Carstar Summerside"
+                                        decoding="async" loading="lazy"
+                                        srcset="/images/star-150x150.png 150w, https://centennialcarstar.com/wp-content/uploads/2022/07/star.png 250w"
+                                        sizes="(max-width: 45px) 100vw, 45px">
+
+                                    <strong>Centennial Carstar Summerside</strong>
+
+                                    <span class="location-street">610 South Drive</span>
+
+                                    <span>Summerside Prince Edward Island C1N 3Z7</span>
+                                    <span class="location-country">Canada</span>
+                                </p>
+                                <p class="location-contact-details">
+
+                                        <span><strong>Phone</strong>: <a
+                                                href="tel:19024362603">1-902-436-2603</a></span>
+
+
+                                </p>
+
+                            </div>
+                            <div class="location-direction-wrap">
+                                <a class="location-directions" target="_blank"
+                                   href="https://www.google.com/maps/dir/?api=1&amp;origin=34%20Passmore%20St%2C%20Charlottetown%2C%20PE%20C1A%202B7%2C%20Canada&amp;destination=610%20South%20Drive%2C%20Summerside%2C%20C1N%203Z7%2C%20Canada&amp;travelmode=driving">Directions</a>
+                            </div>
+                        </li>
+
+                        <li data-store-id="51532">
+                            <div class="location-store-location">
+                                <p><img width="45" height="45" src="/images/star-150x150.png"
+                                        class="location-store-thumb wp-post-image"
+                                        alt="Centennial Carstar New Glasgow"
+                                        decoding="async" loading="lazy"
+                                        srcset="/images/star-150x150.png 150w, https://centennialcarstar.com/wp-content/uploads/2022/07/star.png 250w"
+                                        sizes="(max-width: 45px) 100vw, 45px">
+
+                                    <strong>Centennial Carstar New Glasgow</strong>
+
+                                    <span class="location-street">265 Coalburn Mclellans Brook Road</span>
+
+                                    <span>New Glasgow Nova Scotia B2H 5C7</span>
+                                    <span class="location-country">Canada</span>
+                                </p>
+                                <p class="location-contact-details">
+
+                                        <span><strong>Phone</strong>: <a
+                                                href="tel:19029223311">1-902-922-3311</a></span>
+
+
+                                </p>
+
+                            </div>
+                            <div class="location-direction-wrap">
+
+                                <a class="location-directions" target="_blank"
+                                   href="https://www.google.com/maps/dir/?api=1&amp;origin=34%20Passmore%20St%2C%20Charlottetown%2C%20PE%20C1A%202B7%2C%20Canada&amp;destination=265%20Coalburn%20Mclellans%20Brook%20Road%2C%20New%20Glasgow%2C%20B2H%205C7%2C%20Canada&amp;travelmode=driving">Directions</a>
+                            </div>
+                        </li>
+
+                        <li data-store-id="51530">
+                            <div class="location-store-location">
+                                <p><img width="45" height="45" src="/images/star-150x150.png"
+                                        class="location-store-thumb wp-post-image" alt="Centennial Carstar Truro"
+                                        decoding="async" loading="lazy"
+                                        srcset="/images/star-150x150.png 150w, https://centennialcarstar.com/wp-content/uploads/2022/07/star.png 250w"
+                                        sizes="(max-width: 45px) 100vw, 45px">
+
+                                    <strong>Centennial Carstar Truro</strong>
+
+                                    <span class="location-street">9 Farnham Road</span>
+
+                                    <span>Truro Nova Scotia B2N 2X6</span>
+                                    <span class="location-country">Canada</span>
+                                </p>
+                                <p class="location-contact-details">
+
+                                        <span><strong>Phone</strong>: <a
+                                                href="tel:19026623002">1-902-662-3002</a></span>
+
+
+                                </p>
+
+                            </div>
+                            <div class="location-direction-wrap">
+
+                                <a class="location-directions" target="_blank"
+                                   href="https://www.google.com/maps/dir/?api=1&amp;origin=34%20Passmore%20St%2C%20Charlottetown%2C%20PE%20C1A%202B7%2C%20Canada&amp;destination=9%20Farnham%20Road%2C%20Truro%2C%20B2N%202X6%2C%20Canada&amp;travelmode=driving">Directions</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                    <iframe src="https://www.google.com/maps/d/u/1/embed?mid=17Z1BspGDnJpBfCyIClyOcyuOiIDl_4E&ehbc=2E312F"
+                            width="650" height="500"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<footer class="footer py-3 mt-auto">
+    <div class="container-fluid text-black-50">
+        <div class="row re-row">
+            <div class="col text-left">
+                &nbsp;
+                <a href="http://github.joshuamc.ca" target="_blank"><i class="fa-brands fa-github fa-2xl"></i></a>
+                &nbsp;&nbsp;&nbsp;
+                <a href="#" target="_blank"><i class="fa-brands fa-twitter fa-2xl"></i></a>
+            </div>
+            <div class="col text-center">
+                Copyright @ Joshua Mckenna 2022
+            </div>
+            <div class="col text-right">
+                <a href="#" target="_blank"><i class="fa-brands fa-discord fa-2xl"></i></i></a>
+            </div>
+        </div>
+    </div>
+</footer>
+<!--JQuery-->
+<script src="./js/jquery-3.6.1.js"></script>
+
+<!--Boot Strap-->
+<script src="./js/bootstrap.js"></script>
+<script src="./js/bootstrap.bundle.js"></script>
+<!--Custom JavaScript-->
+<script src="./scripts/myscripts.js"></script>
+
+<script src="https://kit.fontawesome.com/ea7288deac.js" crossorigin="anonymous"></script>
+</body>
+</html>
